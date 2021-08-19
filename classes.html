@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Classes</title>
+</head>
+
+<body>
+    <h1>Solutions</h1>
+    <img src="https://www.mathematics-monster.com/images5/circumference_circle_5.jpg"
+        alt="picture of a circle with radius 5">
+    <h2 id="circle"></h2>
+    <img src="https://vt-vtwa-assets.varsitytutors.com/vt-vtwa/uploads/problem_question_image/image/950/Screen_Shot_2013-09-16_at_11.28.29_AM.png"
+        alt="rectangle with 12 width and 7 length">
+    <h2 id="rectangle"></h2>
+    <img src="http://img.sparknotes.com/figures/2/2e8a313ab87d8d9656417d9ad2b59f65/problem_square1.gif"
+        alt="square with 7 length">
+    <h2 id="square"></h2>
+
+    <!-- Let's create shaped objects
+    1. Define a new class called Circle with appropriate attributes and instantiate a few Circle objects.
+        a. Write a function called circle_area that returns the area of the object. 
+        b. Write a function total_sides that returns the number of sides of the object.
+    2. Define a new class called Rectangle with appropriate attributes and instantiate a few Rectangle objects.
+        a.Write a function called rectangle_area that returns the area of the given object.
+        b.Write a function total_sides that returns the number of sides of the object.
+    3. Define a new class called Square with appropriate attributes and instantiate a few Square objects.
+        a.Write a function called square_area that returns the area of the given object.
+        b.Write a function total_sides that returns the number of sides of the object. -->
+    <script>
+
+        class Circle {
+            constructor(radius) {
+                this.radius = radius
+            }
+            circleArea() {
+                return Math.PI * (this.radius ** 2)
+            }
+            circleCircumference() {
+                return Math.PI * (2 * this.radius)
+            }
+        }
+
+        class Rectangle {
+            constructor(length, width) {
+                this.length = length;
+                this.width = width;
+            }
+            rectangleArea() {
+                return this.length * this.width
+            }
+            rectanglePerimeter() {
+                return 2 * (this.length + this.width)
+            }
+        }
+
+        class Square {
+            constructor(length) {
+                this.length = length;
+            }
+            squareArea() {
+                return this.length ** 2
+            }
+            squarePerimeter() {
+                return 4 * this.length
+            }
+        }
+
+        let circ1 = new Circle(5);
+        circ1.circleArea();
+        circ1.circleCircumference();
+
+        let rect1 = new Rectangle(7, 12);
+        rect1.rectangleArea();
+        rect1.rectanglePerimeter();
+
+        let squa1 = new Square(10);
+        squa1.squareArea();
+        squa1.squarePerimeter();
+
+        document.getElementById("circle").innerHTML = `This circle has an area of ${circ1.circleArea()} and a circumference of ${circ1.circleCircumference()}.`
+        document.getElementById("rectangle").innerHTML = `This rectangle has an area of ${rect1.rectangleArea()} and a perimeter of ${rect1.rectanglePerimeter()}.`
+        document.getElementById("square").innerHTML = `This square has an area of ${squa1.squareArea()} and a perimeter of ${squa1.squarePerimeter()}.`
+
+    </script>
+</body>
+
+</html>
