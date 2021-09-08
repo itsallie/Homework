@@ -1,0 +1,11 @@
+body{
+    background-color: azure;
+}
+h1 {
+    display: block;
+    text-align: center;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+}
