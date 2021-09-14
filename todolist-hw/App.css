@@ -1,0 +1,46 @@
+body {
+    background-image: url('https://hw-media.herworld.com/public/2020/03/stylish-ways-spruce-up-home-office-space.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.App{
+    border: thin solid white;
+    width: 500px;
+    height: 700px;
+    background-color: rgba(245, 245, 245, 0.795);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+button {
+    background-color: darkcyan;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+}
+
+#list {
+    display: inline-table;
+}
+
+li{
+    list-style: none;
+}
+
+#remove {
+    border-radius: 10px;
+    font-size: 10px;
+    background-color:rgb(255, 70, 70);
+}
