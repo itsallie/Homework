@@ -1,0 +1,94 @@
+#floorplan{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 100px);
+}
+
+#kitchen {
+    color: blue;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 7/9;
+    grid-row: 1/6;
+    background-image: url("https://cdn.dribbble.com/users/561357/screenshots/2275189/jjj.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bed-1 {
+    color: blue;
+    font-size: 20px;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    background-image: url("https://t4.ftcdn.net/jpg/03/29/76/59/360_F_329765982_rfw4o7krCA1Y406KTlOqrnQWJ28NgKlN.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#livingroom {
+    color: blue;
+    font-size: 20px;
+    grid-column: 4/7;
+    grid-row: 1/6;
+    background-image: url("https://media.istockphoto.com/photos/living-room-overhead-view-picture-id1171644668?k=20&m=1171644668&s=170667a&w=0&h=cR7qJ12yWFKoqytC5E37uonf3_34PUp8-y2xr-tyWSo=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Full-bath {
+    color: blue;
+    font-size: 20px;
+    grid-column: 1/4;
+    grid-row: 4/6;
+    background-image: url("https://image.freepik.com/free-vector/bathroom-interior-top-view-room-with-empty-bath-tub-toilet-bidet-bowls-ceramic-sink-with-mirror-window-rug-floor-modern-lavatory_107791-6854.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bed-2{
+    color: blue;
+    font-size: 20px;
+    grid-column: 1/4;
+    grid-row: 6/9;
+    background-image: url("https://t4.ftcdn.net/jpg/02/64/65/35/360_F_264653577_zE9wA7rDIGis5Dt6QaHoHRhUG4LH2Q2s.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Half-bath {
+    color: blue;
+    font-size: 20px;
+    grid-column: 4/6;
+    grid-row: 6/9;
+    background-image: url("https://previews.123rf.com/images/hemul75/hemul751606/hemul75160600183/57655909-interior-of-the-modern-design-bathroom-top-view-3d-rendering.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bed-3 {
+    color: blue;
+    font-size: 20px;
+    grid-column: 6/9;
+    grid-row: 6/9;
+    background-image: url("https://media.istockphoto.com/photos/empty-bed-above-view-picture-id1241738359?k=20&m=1241738359&s=612x612&w=0&h=E4xDcV2nSx9l9Pr96cRE-am2d9TfrZbGEdiBurSx6Tc=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#oven {
+    width: 100px;
+    height: 100px;
+    margin-left:120px ;
+}
+
+#sink {
+    width: 100px;
+    height: 100px;
+}
+
+div {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
